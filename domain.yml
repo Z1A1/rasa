@@ -1,0 +1,146 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ABD School
+  
+entities:
+ - name  
+slots:
+  
+  first_name&last_name:
+    type: text
+    influence_conversation: false
+  email:
+   type: any
+   influence_conversation: false   
+  
+  phone:
+   type: any
+   influence_conversation: false 
+  address:
+   type: any
+   influence_conversation: false  
+  child_name:
+   type: any
+   influence_conversation: false
+  child_grade:
+    type: any
+    influence_conversation: false
+  acedamic_year:
+    type: any
+    influence_conversation: false  
+  dob:
+    type: any
+    influence_conversation: false  
+  gaurdian:
+    type: any
+    influence_conversation: false    
+  school:
+    type: any
+    influence_conversation: false   
+
+  schooldetails:
+    type: any
+    influence_conversation: false 
+
+   
+
+responses:
+  utter_ABD School:
+  - text: "Hello, Welcome to ABD School!!! How can I help you today?" 
+
+  utter_greet:
+  - text: "Hey! How are you?"
+  utter_ask_first_name&last_name:
+  - text: Thank you for your interest in our Oakridge Bachupally School.Before we begin, please provide us with your First Name & Last Name.?
+  utter_ask_email:
+  - text: please enter your email 
+  utter_ask_phone:
+  - text: Please enter your phone
+  utter_ask_address:
+  - text: May I know your current residing city?
+  utter_ask_child_name:
+  - text: May I know the Child's Name?
+  utter_ask_ child_grade:
+  - text: May I know which Grade are you enquiring for?
+  utter_ask_acedamicyear:
+  - text: Which academic year is the enquiry for?
+  utter_ask_dob:
+  - text: Please enter your Child's Date Of Birth.
+  utter_ask_gaurdian:
+  - text: What is your relationship with the child?
+  utter_ask_school:
+  - text: Would you like to know more about our school?
+  utter_ask_schooldetails:
+  - text: Please select the school to know more about the curriculum offered?Gachibowli/Bachupally/Bengaluru/Vizag/Mohali .
+            
+
+
+
+
+
+  
+  utter_parent:
+  - text: Are you a new or an existing parent?
+ 
+
+
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+forms:
+  school_form:
+   
+    first_name&last_name:
+    - type: from_text
+    email:
+    - type: from_text
+    phone:
+    - type: from_text
+   address:
+    - type: from_text
+    child_name:
+    - type: from_text
+    child_grade:
+    - type: from_text
+    acedamicyear:
+    - type: from_text
+    dob:
+    - type: from_text
+    gaurdian:
+    - type: from_text
+    school:
+    - type: from_text
+    schooldetails:
+    - type: from_text
+    
+    
+
+     
+
+
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
