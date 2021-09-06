@@ -8,7 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - ABD School
+  - admission
   
 entities:
  - name  
