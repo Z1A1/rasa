@@ -13,12 +13,20 @@ rules:
   - action: utter_iamabot
 - rule: school admission
   steps:
-  - intent: ABD School
-  - action: utter_ABD School
+  - intent: admission
+  - action: utter_ABD 
   - action: school_form
   - active_loop: school_form
+  
+- rule: Submit form
+  condition:
+  - active_loop: school_form
+  steps:
+  - action: school_form
   - active_loop: null
-
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_goodbye
 
 
    
