@@ -90,10 +90,15 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-- intent: ABD School
+- intent: admission
   examples: |
     - Admission Enquiry
     - Job Opportunities
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning  
     
    
    
