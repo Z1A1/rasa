@@ -59,7 +59,7 @@ responses:
   utter_greet:
   - text: "Hey! How are you?"
   utter_ask_first_name&last_name:
-  - text: Thank you for your interest in our Oakridge Bachupally School.Before we begin, please provide us with your First Name & Last Name.?
+  - text: Before we begin, please provide us with your First Name & Last Name.?
   utter_ask_email:
   - text: please enter your email 
   utter_ask_phone:
